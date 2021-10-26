@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просто Вкусно</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <div class="header-block">
+                    <div class="header-logo">
+                        <a href="./">
+                            <!-- <img src="./img/logo.svg" alt="Просто вкусно"> -->
+                        </a>
+                    </div>
+                    <div class="header-info">
+                        <div class="header-info__item">
+                            <p class="header-info__title">Время работы:</p>
+                            <span class="header-info__text">c 11:30 до 18:30</span>
+                        </div>
+                        <div class="header-info__item">
+                            <p class="header-info__title">Телефон:</p>
+                            <a href="tel: +73822238030" class="header-info__text"> +7 (382) 223-80-30</a>
+                        </div>
+                        <div class="header-info__item">
+                            <p class="header-info__title">Адрес:</p>
+                            <a href="https://go.2gis.com/z8zbjl" target="_blank" class="header-info__text">г. Томск, ул. Большая
+                Подгорная, 87</a>
+                        </div>
+                    </div>
+                    <div class="header-cart">
+                        <a href="#" class="icon" id="cart">
+                            <img src="./img/cart.svg" alt="Корзина">
+                            <span class="header-cart__count">0</span>
+                        </a>
+                        <a href="#" class="icon" id="open">
+                            <img src="./img/menu.svg" alt="Меню">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="nav">
+            <div class="container">
+                <div class="nav-block">
+                    <nav>
+                        <ul>
+                            <li class="nav__item"><a href="#">О нас</a></li>
+                            <li class="nav__item"><a href="#">Меню</a></li>
+                            <li class="nav__item"><a href="#">Индивидуальная программа</a></li>
+                            <li class="nav__item"><a href="#">Для бизнеса</a></li>
+                            <li class="nav__item"><a href="#">Оплата</a></li>
+                            <li class="nav__item"><a href="#">Доставка</a></li>
+                            <li class="nav__item"><a href="#">Преимущества</a></li>
+                            <li class="nav__item"><a href="#">Отзывы</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="mob">
+                        <a href="#" class="icon" id="close">
+                            <img src="./img/close.svg" alt="Закрыть">
+                        </a>
+                        <ul>
+                            <li class="nav__item"><a href="#">О нас</a></li>
+                            <li class="nav__item"><a href="#">Меню</a></li>
+                            <li class="nav__item"><a href="#">Индивидуальная программа</a></li>
+                            <li class="nav__item"><a href="#">Для бизнеса</a></li>
+                            <li class="nav__item"><a href="#">Оплата</a></li>
+                            <li class="nav__item"><a href="#">Доставка</a></li>
+                            <li class="nav__item"><a href="#">Преимущества</a></li>
+                            <li class="nav__item"><a href="#">Отзывы</a></li>
+                            <li class="nav__item">
+                                <div class="nav-info">
+                                    <div class="header-info__item">
+                                        <p class="header-info__title">Время работы:</p>
+                                        <span class="header-info__text">c 11:30 до 18:30</span>
+                                    </div>
+                                    <div class="header-info__item">
+                                        <p class="header-info__title">Телефон:</p>
+                                        <a href="tel:+7 (909) 543-33-37" class="header-info__text">+7 (909) 543-33-37</a>
+                                    </div>
+                                    <div class="header-info__item">
+                                        <p class="header-info__title">Адрес:</p>
+                                        <span class="header-info__text">Томск, пер. Нижний, 45</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-block" id="banner">
+                <div class="banner-item">
+                    <div class="banner-item__block container">
+                        <h2 class="banner-header">Сегодня в бизнес-ланче</h2>
+                        <div class="banner-info">
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Смарт-суп с нутом 50 кКал</h3>
+                                <p class="banner-info__text">цветная капуста, морковь, нут, сельдерей, укроп, петрушка, соль, пряности
+                                </p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Нут по-мароккански с булгуром 158 кКал</h3>
+                                <p class="banner-info__text">капуста цветная, морковь, булгур, нут, болгарский перец, тыква, масло подсолнечное, мандарин, томат, соль, укроп свежий, петрушка, сахар, кориандр, зира, асафетида, куркума, перец чёрный</p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Название салата 158 кКал</h3>
+                                <p class="banner-info__text">капуста цветная, морковь, тыква, масло подсолнечное, мандарин, томат, соль, укроп свежий, петрушка</p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <div class="banner-item__block container">
+                        <h2 class="banner-header">Сегодня в бизнес-ланче</h2>
+                        <div class="banner-info">
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Смарт-суп с нутом 50 кКал</h3>
+                                <p class="banner-info__text">цветная капуста, морковь, нут, сельдерей, укроп, петрушка, соль, пряности
+                                </p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Нут по-мароккански с булгуром 158 кКал</h3>
+                                <p class="banner-info__text">капуста цветная, морковь, булгур, нут, болгарский перец, тыква, масло подсолнечное, мандарин, томат, соль, укроп свежий, петрушка, сахар, кориандр, зира, асафетида, куркума, перец чёрный</p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Название салата 158 кКал</h3>
+                                <p class="banner-info__text">капуста цветная, морковь, тыква, масло подсолнечное, мандарин, томат, соль, укроп свежий, петрушка</p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-item">
+                    <div class="banner-item__block container">
+                        <h2 class="banner-header">Сегодня в бизнес-ланче</h2>
+                        <div class="banner-info">
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Смарт-суп с нутом 50 кКал</h3>
+                                <p class="banner-info__text">цветная капуста, морковь, нут, сельдерей, укроп, петрушка, соль, пряности
+                                </p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Нут по-мароккански с булгуром 158 кКал</h3>
+                                <p class="banner-info__text">капуста цветная, морковь, булгур, нут, болгарский перец, тыква, масло подсолнечное, мандарин, томат, соль, укроп свежий, петрушка, сахар, кориандр, зира, асафетида, куркума, перец чёрный</p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                            <div class="banner-info__item">
+                                <h3 class="banner-info__title">Название салата 158 кКал</h3>
+                                <p class="banner-info__text">капуста цветная, морковь, тыква, масло подсолнечное, мандарин, томат, соль, укроп свежий, петрушка</p>
+                                <div class="banner-info__extra">
+                                    <span class="banner-info__extra">2,0 белки</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">7,0 углеводы</span>
+                                    <span class="banner-info__divider">|</span>
+                                    <span class="banner-info__extra">2,0 жиры</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="banner-next" class="mini-icon banner-button banner-next">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+            <button id="banner-prev" class="mini-icon banner-button banner-prev">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 13L1 7L7 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+        </div>
+        <div class="nav-menu">
+            <div class="container">
+                <div class="nav-menu-block">
+                    <button class="nav-menu__btn primary open" data-tab="menu-1">Быстрое питание</button>
+                    <button class="nav-menu__btn primary" data-tab="menu-2">Обед</button>
+                    <button class="nav-menu__btn primary" data-tab="menu-3">Коробочная диета</button>
+                    <button class="nav-menu__btn primary" data-tab="menu-4">Индивидуальная программа питания</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <div class="cart">
+                <div class="cart-body">
+                    <div class="cart-step-1" v-show="this.cartStep == 1">
+                        <div class="cart-title">Корзина</div>
+                        <div class="cart-total">Общая сумма: <span>{{this.cartTotal}}</span> руб</div>
+                        <div class="cart-total-sale">
+                            <button class="mini-tag" v-if="!cartExtra[5].inCart && this.cart.length > 0">-5 руб. за заказ без салфеток</button>
+                            <button class="mini-tag" v-if="!cartExtra[6].inCart && this.cart.length > 0">-10 руб. за заказ без приборов</button>
+                        </div>
+
+                        <div class="cart-wrapper">
+                            <div id="cart-empty" v-show="this.cart.length == 0">
+                                Ваша корзина пока пуста
+                            </div>
+                            <div class="cart-item" v-for="product in cart" :key="product.id">
+                                <div class="cart-item__name">{{product.title}}</div>
+                                <div class="cart-item__price">{{product.price}} ₽ x {{product.inCart}}</div>
+                                <div class="cart-count">
+                                    <button class="mini cart__minus" @click="minusToCart(product.id)"><img src="./img/icons/minus.svg"
+                      alt="Убрать"></button>
+                                    <span class="cart__count">{{product.inCart}}</span>
+                                    <button class="mini cart__plus" @click="plusToCart(product.id)"><img src="./img/icons/plus.svg"
+                      alt="Добавить"></button>
+                                </div>
+                            </div>
+                            <div class="cart-extra" v-show="this.cart.length > 0">
+                                <span class="cart-extra__title">Дополнительно:</span>
+                                <div class="cart-item" v-for="product in cartExtra" :key="product.title">
+                                    <input type="checkbox" :name="product.title" :id="product.title" v-model="product.inCart">
+                                    <div class="cart-extra__check"></div>
+                                    <label :for="product.title" class="cart-item__name">{{product.title}}</label>
+                                    <span class="cart-extra__price cart-item__price">{{product.price}} ₽</span>
+                                </div>
+                                <span v-if="this.cart.length > 0">P.S. После возврата стеклянной тары, вы получите промокод на сумму, равную стоимости этой самой тары</span>
+                                <div class="cart-extra-dostavka">
+                                    <input type="radio" id="cart-dost" name="dostavka" value="Доставка" v-model="dostType">
+                                    <div class="cart-extra__radio"></div>
+                                    <label for="cart-dost" class="cart-item__name">Доставка</label>
+                                    <span class="cart-item__price">{{this.dostCost}} ₽</span>
+                                </div>
+                                <div class="cart-extra-dostavka">
+                                    <input type="radio" id="cart-sam" name="dostavka" checked value="Самовывоз" v-model="dostType">
+                                    <div class="cart-extra__radio"></div>
+                                    <label for="cart-sam" class="cart-item__name">Самовывоз</label>
+                                </div>
+                                <div class="cart-extra-code">
+                                    <label for="cart-code">Есть купон?</label>
+                                    <input type="text" class="cart-code__input" id="cart-code" v-model="code
+                  ">
+                                    <button class="cart-extra-code__btn secondary" @click="promo()">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="secondary cart-next" v-if="this.cart.length > 0" @click="createReceipt()">Далее</button>
+                    </div>
+                    <div class="cart-client" v-show="this.cartStep == 2">
+                        <div class="cart-title cart-client__title">Заполните контакты данные:</div>
+                        <form @submit.prevent="sendPay()" method="POST" class="cart-client-form">
+                            <div class="cart-client-group">
+                                <label for="cart-name" class="cart-client__label">Имя и Фамилия</label>
+                                <input type="text" id="cart-name" v-model="clientForm.name" class="cart-client__input" required>
+                            </div>
+                            <div class="cart-client-group">
+                                <label for="cart-address" class="cart-client__label">Адрес</label>
+                                <input type="text" id="cart-address" v-model="clientForm.address" class="cart-client__input" required>
+                            </div>
+                            <div class="cart-client-group">
+                                <label for="cart-email" class="cart-client__label">E-mail</label>
+                                <input type="email" id="cart-email" v-model="clientForm.email" class="cart-client__input" required>
+                            </div>
+                            <div class="cart-client-group">
+                                <label for="cart-phone" class="cart-client__label">Телефон</label>
+                                <input type="text" id="cart-phone" v-model="clientForm.phone" placeholder="+7 (" class="cart-client__input" required>
+                            </div>
+
+                            <input type="hidden" name="value" :value="this.cartTotal">
+                            <button class="secondary">Заказать</button>
+                        </form>
+                    </div>
+                    <div class="cart-close">
+                    </div>
+                </div>
+            </div>
+            <div class="partners" v-if="this.partnersOpen">
+                <div class="partners-block">
+                    <div class="partners-close" @click="() => {this.partnersOpen = false}"></div>
+                    <h3 class="partners__title">Быстрая доставка осуществляется через агрегаторы:</h3>
+                    <div class="partners-links">
+                        <a href="#" class="partners__link">
+                            <img src="./img/delivery.jpg" alt="Delivery club">
+                            <span class="partners__text">Delivery club</span>
+                        </a>
+                        <a href="#" class="partners__link">
+                            <img src="./img/yandex.png" alt="Яндекс.Еда">
+                            <span class="partners__text">Яндекс.Еда</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="menu-tab open" id="menu-1">
+                    <h1 class="menu-title">Быстрое питание</h1>
+                    <button class="mini-tag">Время доставки от 30 минут, с 11:30 до 16:30, доставка — от 50 ₽</button>
+                    <div class="menu-cards">
+                        <div class="menu-card" v-for="product in products1" :key="product.id">
+                            <img :src="product.imgsrc" :alt="product.title">
+                            <div class="menu-card-text">
+                                <h3 class="menu-card__title">{{product.title}}</h3>
+                                <p class="menu-card__text">{{product.description}}</p>
+                                <div class="menu-card-footer">
+                                    <span class="menu-card__price">{{product.price}} ₽</span>
+                                    <button class="mini menu-card__order" @click="openPartners(product.link1, product.link2)">Заказать</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="menu-control">
+                        <a href="#" class="menu-all">Посмотреть все</a>
+                        <button class="mini-icon prev"><img src="./img/icons/prev.svg" alt="Назад"></button>
+                        <button class="mini-icon next"><img src="./img/icons/next.svg" alt="Далее"></button>
+                    </div>
+                </div>
+                <div class="menu-tab" id="menu-2" style="display: none">
+                    <h1 class="menu-title">Обеды</h1>
+                    <button class="mini-tag">Предзаказ принимаем до 15:00</button>
+                    <button class="mini-tag">доставка завтра с 12:00 до 13:00 или с 13:00 до 14:00, стоимость доставки — 0-99
+            ₽</button>
+                    <div class="menu-cards">
+                        <div class="menu-card" v-for="product in products2" :key="product.id">
+                            <img :src="product.imgsrc" :alt="product.title">
+                            <div class="menu-card-text">
+                                <h3 class="menu-card__title">{{product.title}}</h3>
+                                <p class="menu-card__text">{{product.description}}</p>
+                                <div class="menu-card-footer">
+                                    <span class="menu-card__price">{{product.price}} ₽</span>
+                                    <button v-if="product.inCart == 0" class="mini menu-card__order" @click="toCart(product)"><img
+                      src="./img/icons/plus.svg"></button>
+                                    <div class="menu-card-count" v-if="product.inCart > 0">
+                                        <button class="mini menu-card__minus" @click="minusToCart(product.id)"><img
+                        src="./img/icons/minus.svg" alt="Убрать"></button>
+                                        <span class="menu-card__count">{{product.inCart}}</span>
+                                        <button class="mini menu-card__plus" @click="plusToCart(product.id)"><img src="./img/icons/plus.svg"
+                        alt="Добавить"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-control">
+                        <a href="#" class="menu-all">Посмотреть все</a>
+                        <button class="mini-icon prev"><img src="./img/icons/prev.svg" alt="Назад"></button>
+                        <button class="mini-icon next"><img src="./img/icons/next.svg" alt="Далее"></button>
+                    </div>
+                </div>
+                <div class="menu-tab" id="menu-3" style="display: none">
+                    <h1 class="menu-title">Коробочная диета</h1>
+                    <button class="mini-tag">Предзаказ принимаем до 15:00</button>
+                    <button class="mini-tag">доставка в понедельник, среду, пятницу с 19:00 до 22:00, стоимость доставки – 0
+            ₽</button>
+                    <div class="menu-box">
+                        <div class="menu-box-text">
+                            <h3 class="menu-box__title">Здоровое питание на каждый день для похудения, поддержания или набора веса с доставкой на дом в Томске</h3>
+                            <p class="menu-box__text">Закажите готовую здоровую еду за 630–1400 ₽ в день и забудьте о постоянной готовке и расчёте КБЖУ</p>
+                            <button class="menu-box__btn secondary">Рассчитать питание</button>
+                        </div>
+                        <div class="menu-cards">
+                            <div class="menu-card">
+                                <div class="menu-card__img"></div>
+                                <div class="menu-card-text">
+                                    <h3 class="menu-card__title">Название</h3>
+                                    <p class="menu-card__text">Здесь какое-то небольшое описание диеты, например, что она белковая.</p>
+                                    <span class="menu-card__extra">1400 кКал | 80 г белков | 30 г улев | 12 г жиров</span>
+                                    <div class="menu-card-footer">
+                                        <span class="menu-card__price">500 ₽ / день</span>
+                                        <button class="mini menu-card__order">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-card">
+                                <div class="menu-card__img"></div>
+                                <div class="menu-card-text">
+                                    <h3 class="menu-card__title">Название</h3>
+                                    <p class="menu-card__text">Здесь какое-то небольшое описание диеты, например, что она белковая.</p>
+                                    <span class="menu-card__extra">1400 кКал | 80 г белков | 30 г улев | 12 г жиров</span>
+                                    <div class="menu-card-footer">
+                                        <span class="menu-card__price">500 ₽ / день</span>
+                                        <button class="mini menu-card__order">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-card">
+                                <div class="menu-card__img"></div>
+                                <div class="menu-card-text">
+                                    <h3 class="menu-card__title">Название</h3>
+                                    <p class="menu-card__text">Здесь какое-то небольшое описание диеты, например, что она белковая.</p>
+                                    <span class="menu-card__extra">1400 кКал | 80 г белков | 30 г улев | 12 г жиров</span>
+                                    <div class="menu-card-footer">
+                                        <span class="menu-card__price">500 ₽ / день</span>
+                                        <button class="mini menu-card__order">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-card">
+                                <div class="menu-card__img"></div>
+                                <div class="menu-card-text">
+                                    <h3 class="menu-card__title">Название</h3>
+                                    <p class="menu-card__text">Здесь какое-то небольшое описание диеты, например, что она белковая.</p>
+                                    <span class="menu-card__extra">1400 кКал | 80 г белков | 30 г улев | 12 г жиров</span>
+                                    <div class="menu-card-footer">
+                                        <span class="menu-card__price">500 ₽ / день</span>
+                                        <button class="mini menu-card__order">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-control">
+                        <a href="#" class="menu-all">Посмотреть все</a>
+                        <button class="mini-icon prev"><img src="./img/icons/prev.svg" alt="Назад"></button>
+                        <button class="mini-icon next"><img src="./img/icons/next.svg" alt="Далее"></button>
+                    </div>
+                </div>
+                <div class="menu-tab" id="menu-4" style="display: none">
+                    <h1 class="menu-title">Индивидуальная программа питания</h1>
+                </div>
+            </div>
+        </div>
+        <div class="sale">
+            <div class="container">
+                <div class="sale-block">
+                    <img src="./img/sale.svg" alt="Скидка 15%" class="sale-img">
+                    <div class="sale-text">
+                        <h2 class="sale__title">Дарим скидку 15%</h2>
+                        <p class="sale__text">на пробный дневной рацион</p>
+                        <form class="sale-form" id="sale-form">
+                            <span class="sale-form__title">Чтобы получить скидку, заполните форму</span>
+                            <input type="text" name="name" class="sale-form__input" placeholder="Ваше имя" required>
+                            <input type="text" name="phone" class="sale-form__input" id="sale-phone" placeholder="+7 (" required>
+                            <button class="secondary sale-form__btn">Получить скидку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-block">
+                    <div class="footer-info">
+                        <div class="footer-nav">
+                            <a href="#" class="footer-nav__title">О нас</a>
+                            <a href="#" class="footer-nav__item">Благотворительность</a>
+                            <a href="#" class="footer-nav__item">Новости</a>
+                            <a href="#" class="footer-nav__item">Карьера</a>
+                        </div>
+                        <div class="footer-nav">
+                            <a href="#" class="footer-nav__title">Контакты</a>
+                            <a href="#" class="footer-nav__item">Обратная связь</a>
+                            <a href="#" class="footer-nav__item">Сотрудничество</a>
+                        </div>
+                        <div class="footer-load">
+                            <a href="#"><img src="./img/google.png" alt="Google Play" class="footer-load__btn"></a>
+                            <a href="#"><img src="./img/appstore.png" alt="AppStore" class="footer-load__btn"></a>
+                            <a href="#"><img src="./img/gallery.png" alt="AppGallery" class="footer-load__btn"></a>
+                        </div>
+                    </div>
+                    <div class="footer-form">
+                        <div class="footer-form__title">Подписывайтесь на рассылку</div>
+                        <form class="footer-form-form" method="POST" id="footer-form">
+                            <div class="footer-form-input">
+                                <input type="email" name="email" class="footer-form__input" placeholder="Введите адрес электронной почты" required>
+                                <button class="footer-form__btn secondary">Подписаться</button>
+                            </div>
+                            <div class="footer-form-check">
+                                <input type="checkbox" class="footer-form__checkbox" id="footer-check" required checked>
+                                <div class="footer-form__check"></div>
+                                <label for="footer-check">Я согласен с <a href="#">условиями обработки персональных данных</a></label>
+                            </div>
+                        </form>
+                        <div class="footer-form-links">
+                            <a href="#" class="footer-form__link">
+                                <img src="./img/social/instagram.svg" alt="Instagtam">
+                            </a>
+                            <a href="#" class="footer-form__link">
+                                <img src="./img/social/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#" class="footer-form__link">
+                                <img src="./img/social/vk.svg" alt="vk">
+                            </a>
+                            <a href="#" class="footer-form__link">
+                                <img src="./img/social/youtube.svg" alt="youtube">
+                            </a>
+                            <a href="#" class="footer-form__link">
+                                <img src="./img/social/viber.svg" alt="viber">
+                            </a>
+                            <a href="#" class="footer-form__link" style="padding-left:  3px">
+                                <img src="./img/social/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('#banner').slick({
+            prevArrow: '#banner-prev',
+            nextArrow: '#banner-next'
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/inputmask.js"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
